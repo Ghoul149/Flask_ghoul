@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<br>
+<div class="Form_login">
+    <h1>Enter login Credentials here</h1>
+</div>
+<div class="user">
+    <form action="/submit" , method="Post">
+        <label for="username">
+            Username:
+            <input type="text" , id="username" , name="username">
+        </label><br>
+        <label for="email">
+            Email:
+            <input type="email" , id="email", name="email">
+        </label><br>
+        <input type="submit" value="submit">
+    </form>
+</div>
+<style>
+    .Form_login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<!--Coursal Starts here-->
+<div class="container-fluid my-4">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1000x500/?ice" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1000x500/?nature" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1000x500/?people" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock%}
